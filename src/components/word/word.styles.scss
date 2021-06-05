@@ -1,0 +1,28 @@
+$header_color: #5750c0;
+
+.word-container {
+  display: flex;
+  align-items: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .word {
+    flex: 1;
+    min-width: 30%;
+    margin: 1% 1%;
+    padding: 1vw;
+    border-radius: 10px;
+    color: #eee;
+    background-color: $header_color;
+    h2,
+    h3 {
+      padding: 0.3vw;
+    }
+
+    @media screen and (max-width: 990px) {
+      min-width: 80%;
+    }
+    * {
+      color: inherit;
+    }
+  }
+}
