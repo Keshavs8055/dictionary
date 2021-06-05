@@ -33,8 +33,7 @@ class App extends React.Component {
         headers: {
           "x-rapidapi-host":
             "mashape-community-urban-dictionary.p.rapidapi.com",
-          "x-rapidapi-key":
-            "a36a84312fmsh1a0d509b1e3fd5ep1bd46fjsn86747472d291",
+          "x-rapidapi-key": `${process.env.RAPID_API_KEY}`,
         },
       }
     )
