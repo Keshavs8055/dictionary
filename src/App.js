@@ -80,7 +80,11 @@ class App extends React.Component {
           </div>
         </header>
         <div className="content">
-          {this.state.error.error ? <h2>{this.state.error.msg}</h2> : null}
+          {this.state.error.error ? (
+            <h2 style={{ textAlign: "center", padding: "5px" }}>
+              {this.state.error.msg}
+            </h2>
+          ) : null}
           {this.state.wordData ? (
             <Word data={this.state.wordData}></Word>
           ) : null}
