@@ -22,8 +22,12 @@ class App extends React.Component {
         error: {
           error: true,
           msg: "Please Enter A Word",
+          wordData: [],
+          loading: false,
         },
       });
+      this.setState({});
+      return;
     }
     this.setState({ loading: true });
     fetch(
